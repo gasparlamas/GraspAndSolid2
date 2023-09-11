@@ -25,14 +25,18 @@ namespace Full_GRASP_And_SOLID.Library
             this.steps.Remove(step);
         }
 
-        public void PrintRecipe()
+        //public void PrintRecipe()
+       // {
+            //Console.WriteLine($"Receta de {this.FinalProduct.Description}:");
+           // foreach (Step step in this.steps)
+            //{
+               // Console.WriteLine($"{step.Quantity} de '{step.Input.Description}' " +
+                 //   $"usando '{step.Equipment.Description}' durante {step.Time}");
+           // }
+       // }
+        public ArrayList Steps
         {
-            Console.WriteLine($"Receta de {this.FinalProduct.Description}:");
-            foreach (Step step in this.steps)
-            {
-                Console.WriteLine($"{step.Quantity} de '{step.Input.Description}' " +
-                    $"usando '{step.Equipment.Description}' durante {step.Time}");
-            }
+            get { return this.steps; }
         }
     }
 }
